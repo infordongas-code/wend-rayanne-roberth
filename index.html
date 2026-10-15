@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio pessoal e profissional">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <nav class="nav container">
+      <a class="logo" href="#inicio">Meu<span>Portfólio</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">OLÁ! SEJA BEM-VINDO(A)</p>
+          <h1>Eu sou <span class="destaque">Seu Nome</span></h1>
+          <h2>Estudante de informática e tecnologia</h2>
+          <p class="intro">Estou aprendendo a criar sites e soluções digitais usando HTML, CSS e JavaScript. Este é meu espaço para apresentar meus conhecimentos e projetos.</p>
+          <div class="acoes">
+            <a class="btn" href="#projetos">Ver projetos</a>
+            <a class="btn btn-outline" href="#contato">Fale comigo</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Cartão de apresentação">
+          <div class="avatar">💻</div>
+          <p class="card-label">PORTFÓLIO DIGITAL</p>
+          <h3>Ideias que viram projetos</h3>
+          <p>Aprender • Criar • Evoluir</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="sobre">
+      <p class="eyebrow">UM POUCO SOBRE MIM</p>
+      <h2 class="section-title">Sobre mim</h2>
+      <p class="section-text">Sou uma pessoa dedicada, curiosa e interessada em tecnologia. Gosto de aprender coisas novas, resolver problemas e desenvolver projetos que unam criatividade e informática. Estou construindo minha experiência e buscando novas oportunidades para crescer.</p>
+    </section>
+
+    <section class="section section-soft" id="habilidades">
+      <div class="container">
+        <p class="eyebrow">O QUE ESTOU APRENDENDO</p>
+        <h2 class="section-title">Minhas habilidades</h2>
+        <div class="skills-grid">
+          <article class="skill"><span>🌐</span><h3>HTML</h3><p>Estruturação de páginas web.</p><div class="progress"><i style="width:75%"></i></div></article>
+          <article class="skill"><span>🎨</span><h3>CSS</h3><p>Estilos, cores e layouts responsivos.</p><div class="progress"><i style="width:60%"></i></div></article>
+          <article class="skill"><span>⚙️</span><h3>JavaScript</h3><p>Interatividade e funcionalidades.</p><div class="progress"><i style="width:40%"></i></div></article>
+          <article class="skill"><span>🧩</span><h3>GitHub</h3><p>Organização e compartilhamento de projetos.</p><div class="progress"><i style="width:35%"></i></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projetos">
+      <p class="eyebrow">MEUS TRABALHOS</p>
+      <h2 class="section-title">Projetos em destaque</h2>
+      <div class="projects-grid">
+        <article class="project"><div class="project-icon">🖥️</div><h3>Meu primeiro site</h3><p>Uma página simples criada com HTML e CSS para praticar estrutura e design.</p><span class="tag">HTML • CSS</span></article>
+        <article class="project"><div class="project-icon">🧮</div><h3>Calculadora</h3><p>Projeto de estudo para praticar lógica de programação e eventos em JavaScript.</p><span class="tag">JavaScript</span></article>
+        <article class="project"><div class="project-icon">📌</div><h3>Lista de tarefas</h3><p>Uma lista interativa para adicionar e concluir tarefas do dia a dia.</p><span class="tag">HTML • CSS • JS</span></article>
+      </div>
+      <p class="edit-note">Dica: substitua os exemplos pelos seus próprios projetos quando estiverem prontos.</p>
+    </section>
+
+    <section class="section contact-section" id="contato">
+      <div class="container">
+        <p class="eyebrow">VAMOS CONVERSAR</p>
+        <h2 class="section-title">Entre em contato</h2>
+        <p class="section-text">Quer conhecer melhor meu trabalho ou conversar sobre oportunidades? Envie uma mensagem pelo formulário.</p>
+        <form id="contactForm" class="contact-form">
+          <label for="nome">Seu nome</label>
+          <input id="nome" name="nome" type="text" placeholder="Digite seu nome" required>
+          <label for="email">Seu e-mail</label>
+          <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required>
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
+          <button class="btn" type="submit">Preparar mensagem</button>
+          <p class="form-message" id="formMessage" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Meu Portfólio. Feito com HTML, CSS e JavaScript.</p>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
